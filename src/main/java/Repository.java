@@ -15,7 +15,7 @@ public class Repository {
         return products;
     }
 
-    public void removeById(int removeId) {
+    public Product[] removeById(int removeId) {
         Product[] tmp = new Product[products.length - 1];
         int index = 0;
         for (Product product : products) {
@@ -25,5 +25,6 @@ public class Repository {
             }
         }
         products = tmp;
+        return tmp;
     }
 }
