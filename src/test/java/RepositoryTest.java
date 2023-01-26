@@ -13,9 +13,9 @@ class RepositoryTest {
         Book book2 = new Book(2, "War and Peace", 2000, "Tolstoy");
         Book book3 = new Book(3, "Harry Potter", 1000, "Rowling");
 
-        manager.add(book1);
-        manager.add(book2);
-        manager.add(book3);
+        repo.add(book1);
+        repo.add(book2);
+        repo.add(book3);
 
         Product[] expected = {book1, book2, book3};
         Product[] actual = repo.findAll();
@@ -33,9 +33,9 @@ class RepositoryTest {
         Book book2 = new Book(2, "War and Peace", 2000, "Tolstoy");
         Book book3 = new Book(3, "Harry Potter", 1000, "Rowling");
 
-        manager.add(book1);
-        manager.add(book2);
-        manager.add(book3);
+        repo.add(book1);
+        repo.add(book2);
+        repo.add(book3);
 
         Product[] expected = {book1, book3};
         Product[] actual = repo.removeById(2);
